@@ -1,0 +1,79 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --quiet assemble --no-version-check --depfile C:\Users\mokht\Desktop\elegant\build\app\intermediates\flutter\debug/flutter_build.d --output C:\Users\mokht\Desktop\elegant\build\app\intermediates\flutter\debug -dTargetFile=C:\Users\mokht\Desktop\elegant\lib\main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true --DartDefines=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== debug_android_application
+
+## exception
+
+FileSystemException: FileSystemException: Cannot resolve symbolic links, path = 'C:\Users\mokht\Desktop\elegant\build\app\intermediates\flutter\debug' (OS Error: The system cannot find the file specified.
+, errno = 2)
+
+```
+#0      FileSystemEntity._throwIfError (dart:io/file_system_entity.dart:818:7)
+#1      FileSystemEntity.resolveSymbolicLinksSync (dart:io/file_system_entity.dart:348:5)
+#2      ForwardingFileSystemEntity.resolveSymbolicLinksSync (package:file/src/forwarding/forwarding_file_system_entity.dart:56:49)
+#3      ForwardingFileSystemEntity.resolveSymbolicLinksSync (package:file/src/forwarding/forwarding_file_system_entity.dart:56:49)
+#4      SourceVisitor.visitPattern (package:flutter_tools/src/build_system/source.dart:122:67)
+#5      _PatternSource.accept (package:flutter_tools/src/build_system/source.dart:228:49)
+#6      Target._resolveConfiguration (package:flutter_tools/src/build_system/build_system.dart:246:14)
+#7      Target.resolveOutputs (package:flutter_tools/src/build_system/build_system.dart:204:12)
+#8      Target._toNode (package:flutter_tools/src/build_system/build_system.dart:150:39)
+#9      FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:584:30)
+#10     AssembleCommand.runCommand (package:flutter_tools/src/commands/assemble.dart:318:51)
+#11     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1192:12)
+<asynchronous suspension>
+#12     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1043:27)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#14     CommandRunner.runCommand (package:args/command_runner.dart:196:13)
+<asynchronous suspension>
+#15     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:284:9)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#17     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:232:5)
+<asynchronous suspension>
+#18     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:9)
+<asynchronous suspension>
+#19     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#20     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.2.1, on Microsoft Windows [Version 10.0.19042.985], locale en-US)
+    • Flutter version 2.2.1 at C:\flutter\flutter
+    • Framework revision 02c026b03c (2 weeks ago), 2021-05-27 12:24:44 -0700
+    • Engine revision 0fdb562ac8
+    • Dart version 2.13.1
+
+[!] Android toolchain - develop for Android devices (Android SDK version 30.0.3)
+    • Android SDK at C:\Users\mokht\AppData\Local\Android\sdk
+    • Platform android-30, build-tools 30.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 11.0.8+10-b944.6842174)
+    ✗ Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/windows#android-setup for more details.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/windows#android-setup for detailed instructions).
+
+[✓] Connected device (4 available)
+    • INE LX1r (mobile)                  • 2JNDU18C13008413 • android-arm64  • Android 9 (API 28)
+    • Android SDK built for x86 (mobile) • emulator-5554    • android-x86    • Android 10 (API 29) (emulator)
+    • Chrome (web)                       • chrome           • web-javascript • Google Chrome 91.0.4472.101
+    • Edge (web)                         • edge             • web-javascript • Microsoft Edge 91.0.864.41
+
+! Doctor found issues in 2 categories.
+```

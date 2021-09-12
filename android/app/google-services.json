@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "454299357449",
+    "firebase_url": "https://chatstars-76325-default-rtdb.firebaseio.com",
+    "project_id": "chatstars-76325",
+    "storage_bucket": "chatstars-76325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454299357449:android:c2412fac696ff3b67c03d8",
+        "android_client_info": {
+          "package_name": "com.zoudne.elegant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454299357449-6vf6imo800eihvalhonubhilv90e9glg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7xN9GheuC_wtmK40vSmZlK-KV9-trI7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454299357449-6vf6imo800eihvalhonubhilv90e9glg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454299357449:android:2dc90fc4dd065dc07c03d8",
+        "android_client_info": {
+          "package_name": "com.zoudne.elegantAdmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454299357449-6vf6imo800eihvalhonubhilv90e9glg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7xN9GheuC_wtmK40vSmZlK-KV9-trI7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454299357449-6vf6imo800eihvalhonubhilv90e9glg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

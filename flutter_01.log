@@ -1,0 +1,47 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=2JNDU18C13008413 --start-paused --dart-define=flutter.inspector.structuredErrors=true lib\main.dart
+
+## exception
+
+RPCError: getIsolate: (112) Service has disappeared
+
+```
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, 1.26.0-17.5.pre, on Microsoft Windows [Version 10.0.18363.1379], locale en-US)
+    • Flutter version 1.26.0-17.5.pre at C:\flutter\flutter
+    • Framework revision 1fe38dcb5f (11 days ago), 2021-02-10 16:25:47 -0800
+    • Engine revision d4453f6018
+    • Dart version 2.12.0 (build 2.12.0-259.9.beta)
+
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at C:\Users\Mokhtar\AppData\Local\Android\sdk
+    • Platform android-30, build-tools 29.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 51.0.1
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] VS Code (version 1.53.2)
+    • VS Code at C:\Users\Mokhtar\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.19.0
+
+[✓] Connected device (2 available)
+    • INE LX1r (mobile)                  • 2JNDU18C13008413 • android-arm64 • Android 9 (API 28)
+    • Android SDK built for x86 (mobile) • emulator-5554    • android-x86   • Android 10 (API 29) (emulator)
+    ! Device 2JNDU18C13008413 is offline.
+
+! Doctor found issues in 1 category.
+```
